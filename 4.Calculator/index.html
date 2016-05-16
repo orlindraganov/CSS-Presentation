@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+</head>
+
+<body>
+    <div class="base">
+        <form action="GET">
+            <div id="screencontainer">
+                <input type="text" id="screen" value="1123581321">
+            </div>
+            <div class="binary">
+                <div class="bits">
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                </div>
+                <div class="pos">
+                    <span>63</span>
+                    <span>47</span>
+                    <span>32</span>
+                </div>
+                <div class="bits">
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                    <span>0000</span>
+                </div>
+                <div class="pos">
+                    <span>31</span>
+                    <span>15</span>
+                    <span>0</span>
+                </div>
+            </div>
+            <div id="numsys">
+                <input type="radio" name="numsys" value="Hex" id="Hex"><label for="Hex">Hex</label>
+                <input type="radio" name="numsys" value="Dec" id="Dec" checked><label for="Dec">Dec</label>
+                <input type="radio" name="numsys" value="Oct" id="Oct"><label for="Oct">Oct</label>
+                <input type="radio" name="numsys" value="Bin" id="Bin"><label for="Bin">Bin</label>
+            </div>
+            <div id="length">
+                <input type="radio" name="length" value="Qword" id="Qword" checked><label for="Qword">Qword</label>
+                <input type="radio" name="length" value="Dword" id="Dword"><label for="Dword">Dword</label>
+                <input type="radio" name="length" value="Word" id="Word"><label for="Word">Word</label>
+                <input type="radio" name="length" value="Byte" id="Byte"><label for="Byte">Byte</label>
+            </div>
+            <div class="panel">
+                <table>
+                    <tr>
+                        <td><input type="button" disabled class="inactive"></td>
+                        <td><input type="button" class="actbtn" value="Mod"></td>
+                        <td><input type="button" disabled class="digit" value="A"></td>
+                        <td><input type="button" disabled class="sumbtn" value="MC"></td>
+                        <td><input type="button" disabled class="sumbtn" value="MR"></td>
+                        <td><input type="button" disabled class="sumbtn" value="MS"></td>
+                        <td><input type="button" disabled class="sumbtn" value="M+"></td>
+                        <td><input type="button" disabled class="sumbtn" value="M-"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="actbtn" value="("></td>
+                        <td><input type="button" class="actbtn" value=")"></td>
+                        <td><input type="button" disabled class="digit" value="B"></td>
+                        <td><input type="button" class="actbtn" id="backspace" value="←"></td>
+                        <td><input type="button" class="actbtn" value="CE"></td>
+                        <td><input type="button" class="actbtn" value="C"></td>
+                        <td><input type="button" class="actbtn" value="±"></td>
+                        <td><input type="button" disabled class="actbtn" value="√"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="actbtn" value="RoL"></td>
+                        <td><input type="button" class="actbtn" value="RoR"></td>
+                        <td><input type="button" disabled class="digit" value="C"></td>
+                        <td><input type="button" class="digit" value="7"></td>
+                        <td><input type="button" class="digit" value="8"></td>
+                        <td><input type="button" class="digit" value="9"></td>
+                        <td><input type="button" class="actbtn" value="/"></td>
+                        <td><input type="button" disabled class="actbtn" value="%"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="actbtn" value="Or"></td>
+                        <td><input type="button" class="actbtn" value="Xor"></td>
+                        <td><input type="button" disabled class="digit" value="D"></td>
+                        <td><input type="button" class="digit" value="4"></td>
+                        <td><input type="button" class="digit" value="5"></td>
+                        <td><input type="button" class="digit" value="6"></td>
+                        <td><input type="button" class="actbtn" value="*"></td>
+                        <td><input type="button" disabled class="actbtn" value="1/x"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="actbtn" value="Lsh"></td>
+                        <td><input type="button" class="actbtn" value="Rsh"></td>
+                        <td><input type="button" disabled class="digit" value="E"></td>
+                        <td><input type="button" class="digit" value="1"></td>
+                        <td><input type="button" class="digit" value="2"></td>
+                        <td><input type="button" class="digit" value="3"></td>
+                        <td><input type="button" class="actbtn" value="-"></td>
+                        <td rowspan="2"><input type="button" class="actbtn" value="=" id="equals"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="actbtn" value="Not"></td>
+                        <td><input type="button" class="actbtn" value="And"></td>
+                        <td><input type="button" disabled class="digit" value="F"></td>
+                        <td colspan="2"><input type="button" class="digit" value="0"></td>
+                        <td><input type="button" disabled class="actbtn" value=","></td>
+                        <td><input type="button" class="actbtn" value="+"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
