@@ -10,8 +10,8 @@
 <body>
     <div class="base">
         <form action="GET">
-            <div id="screencontainer">
-                <input type="text" id="screen" value="1123581321">
+            <div id="screen">
+                1123581321
             </div>
             <div class="binary">
                 <div class="bits">
@@ -30,14 +30,14 @@
                     <span>32</span>
                 </div>
                 <div class="bits">
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
-                    <span>0000</span>
+                    <span>0100</span>
+                    <span>0010</span>
+                    <span>1111</span>
+                    <span>1000</span>
+                    <span>0111</span>
+                    <span>1101</span>
+                    <span>1000</span>
+                    <span>1001</span>
                 </div>
                 <div class="pos">
                     <span>31</span>
@@ -45,17 +45,19 @@
                     <span>0</span>
                 </div>
             </div>
-            <div id="numsys">
-                <input type="radio" name="numsys" value="Hex" id="Hex"><label for="Hex">Hex</label>
-                <input type="radio" name="numsys" value="Dec" id="Dec" checked><label for="Dec">Dec</label>
-                <input type="radio" name="numsys" value="Oct" id="Oct"><label for="Oct">Oct</label>
-                <input type="radio" name="numsys" value="Bin" id="Bin"><label for="Bin">Bin</label>
-            </div>
-            <div id="length">
-                <input type="radio" name="length" value="Qword" id="Qword" checked><label for="Qword">Qword</label>
-                <input type="radio" name="length" value="Dword" id="Dword"><label for="Dword">Dword</label>
-                <input type="radio" name="length" value="Word" id="Word"><label for="Word">Word</label>
-                <input type="radio" name="length" value="Byte" id="Byte"><label for="Byte">Byte</label>
+            <div id="settings">
+                <div id="numsys">
+                    <span><input type="radio" name="numsys" value="Hex" id="Hex"><label for="Hex">Hex</label></span>
+                    <span><input type="radio" name="numsys" value="Dec" id="Dec" checked><label for="Dec">Dec</label></span>
+                    <span><input type="radio" name="numsys" value="Oct" id="Oct"><label for="Oct">Oct</label></span>
+                    <span><input type="radio" name="numsys" value="Bin" id="Bin"><label for="Bin">Bin</label></span>
+                </div>
+                <div id="length">
+                    <span><input type="radio" name="length" value="Qword" id="Qword" checked><label for="Qword">Qword</label></span>
+                    <span><input type="radio" name="length" value="Dword" id="Dword"><label for="Dword">Dword</label></span>
+                    <span><input type="radio" name="length" value="Word" id="Word"><label for="Word">Word</label></span>
+                    <span><input type="radio" name="length" value="Byte" id="Byte"><label for="Byte">Byte</label></span>
+                </div>
             </div>
             <div class="panel">
                 <table>
